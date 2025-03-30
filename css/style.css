@@ -269,6 +269,30 @@ h4 {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+  /* Adjust the breakpoint as necessary */
+  .features {
+    grid-template-columns: 1fr; /* Change to single column */
+  }
+  .image_show_smallscreen {
+    display: block; /* Show the image on small screens */
+    width: 100%; /* Ensure it takes the full width */
+    margin: 1rem auto; /* Center the image and add some spacing */
+  }
+  .image_hide_smallscreen {
+    display: none; /* Hide the image on small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .image_show_smallscreen {
+    /* display: block; Show the image on small screens */
+    /* width: 100%; Ensure it takes the full width */
+    /* margin: 1rem auto; Center the image and add some spacing */
+    display: none; /* Hide the image on small screens */
+  }
+}
+
 /* OPERATIONS */
 .operations {
   max-width: 100rem;
@@ -376,7 +400,7 @@ h4 {
 .slider {
   max-width: 100rem;
   height: 50rem;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
 
   /* IN THE END */
@@ -387,7 +411,7 @@ h4 {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 50rem;
+  height: 100%;
 
   display: flex;
   align-items: center;
@@ -484,7 +508,7 @@ h4 {
 .testimonial__header {
   font-size: 2.25rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem;
 }
 
 .testimonial__header a {
