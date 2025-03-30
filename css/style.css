@@ -228,6 +228,20 @@ h4 {
   background-image: var(--gradient-primary);
 }
 
+@media (max-width: 768px) {
+  /* Adjust the breakpoint as necessary */
+  .header__title {
+    grid-template-columns: 1fr; /* Change to single column */
+    align-items: center; /* Center items vertically */
+    justify-items: center; /* Center items horizontally */
+  }
+  .header__img {
+    width: 100%; /* Ensure it takes the full width */
+    margin: 1rem auto; /* Center the image and add some spacing */
+    transform: translateY(0); /* Reset translation */
+  }
+}
+
 /* FEATURES */
 .features {
   display: grid;
