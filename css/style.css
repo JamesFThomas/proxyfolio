@@ -719,30 +719,32 @@ h4 {
 }
 
 /* Styles for slides on screens below 768px */
-@media (max-width: 925px) {
+@media (max-width: 890px) {
   .slide {
     margin-bottom: 3rem; /* Increase space between slides */
     padding: 1rem; /* Add padding for better touch targets */
-    background: #fff; /* Ensure a clear background */
+    /* background: #fff; Ensure a clear background */
     border-radius: 8px; /* Round corners for aesthetics */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a light shadow */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Add a light shadow */
   }
 
   .testimonial {
-    padding: 1.5rem; /* Increase padding inside testimonial */
+    /* padding: 1.5rem; Increase padding inside testimonial */
     position: relative; /* Ensure proper stacking context */
     z-index: 1; /* Keep it above other elements */
     margin: 0 auto; /* Center the testimonial */
+    height: auto; /* Allow height to adjust based on content */
   }
 
   .testimonial__header {
     margin-bottom: 0.75rem; /* Increase space below the header */
-    font-size: 1.25rem; /* Adjust font size for better readability */
+    font-size: 1.5rem; /* Adjust font size for better readability */
   }
 
   .testimonial__text {
     margin-bottom: 1rem; /* Increase space below the text */
-    font-size: 1rem; /* Adjust font size for better readability */
+    font-size: 1.25rem; /* Adjust font size for better readability */
+    width: 100%; /* Ensure text takes full width */
   }
 
   .testimonial__author {
