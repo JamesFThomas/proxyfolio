@@ -476,6 +476,7 @@ h4 {
   width: 65%;
   position: relative;
   margin-bottom: 5rem;
+  padding: 1.2rem;
 }
 
 .testimonial::before {
@@ -810,10 +811,6 @@ h4 {
 }
 
 @media (max-width: 500px) {
-  .slide {
-    margin-top: 9.25rem; /* Ensure the slider has space above */
-  }
-
   .section__title--testimonials {
     margin-bottom: 40px; /* Space below the title */
     z-index: 1; /* Bring it above other elements if necessary */
@@ -825,5 +822,30 @@ h4 {
 
   .nav__link {
     font-size: 0.9rem; /* Reduce font size for smaller screens */
+  }
+
+  .slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #333;
+    border-radius: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+
+  .testimonial::before {
+    content: '\201C';
+    position: absolute;
+    top: -0.5rem;
+    left: -2.8rem;
+    line-height: 1;
+    font-size: 15rem;
   }
 }
