@@ -290,30 +290,6 @@ h4 {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
-  /* Adjust the breakpoint as necessary */
-  .features {
-    grid-template-columns: 1fr; /* Change to single column */
-  }
-  .image_show_smallscreen {
-    display: block; /* Show the image on small screens */
-    width: 100%; /* Ensure it takes the full width */
-    margin: 1rem auto; /* Center the image and add some spacing */
-  }
-  .image_hide_smallscreen {
-    display: none; /* Hide the image on small screens */
-  }
-}
-
-@media (min-width: 768px) {
-  .image_show_smallscreen {
-    /* display: block; Show the image on small screens */
-    /* width: 100%; Ensure it takes the full width */
-    /* margin: 1rem auto; Center the image and add some spacing */
-    display: none; /* Hide the image on small screens */
-  }
-}
-
 /* OPERATIONS */
 .operations {
   max-width: 100rem;
@@ -781,6 +757,35 @@ h4 {
 
   .nav__link {
     font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  /* FEATURES */
+  .features {
+    grid-template-columns: 1fr; /* Change to single column */
+    grid-column: 1 / -1; /* Span the entire column */
+    margin: 0; /* Adjust margin for smaller screens */
+  }
+
+  .features__feature {
+    width: 100%;
+  }
+
+  .image_show_smallscreen {
+    display: block; /* Show the image on small screens */
+    width: 100%; /* Ensure it takes the full width */
+    margin: 1rem auto; /* Center the image and add some spacing */
+  }
+  .image_hide_smallscreen {
+    display: none; /* Hide the image on small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .image_show_smallscreen {
+    /* display: block; Show the image on small screens */
+    /* width: 100%; Ensure it takes the full width */
+    /* margin: 1rem auto; Center the image and add some spacing */
+    display: none; /* Hide the image on small screens */
   }
 }
 
