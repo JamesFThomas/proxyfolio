@@ -100,6 +100,10 @@ p {
   color: #666;
 }
 
+a {
+  cursor: pointer;
+}
+
 /* This is BAD for accessibility! Don't do in the real world! */
 button:focus {
   outline: none;
@@ -116,7 +120,7 @@ img {
 /* NAVIGATION */
 .nav {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   height: 9rem;
   width: 100%;
@@ -164,7 +168,7 @@ img {
 
 .nav__link--btn:link,
 .nav__link--btn:visited {
-  padding: 0.8rem 2.5rem;
+  padding: 0.5rem;
   border-radius: 3rem;
   background-color: var(--color-primary);
   color: #222;
@@ -233,20 +237,6 @@ h4 {
   opacity: 0.7;
   transform: scale(1.07, 1.05) skewX(-15deg);
   background-image: var(--gradient-primary);
-}
-
-@media (max-width: 768px) {
-  /* Adjust the breakpoint as necessary */
-  .header__title {
-    grid-template-columns: 1fr; /* Change to single column */
-    align-items: center; /* Center items vertically */
-    justify-items: center; /* Center items horizontally */
-  }
-  .header__img {
-    width: 100%; /* Ensure it takes the full width */
-    margin: 1rem auto; /* Center the image and add some spacing */
-    transform: translateY(0); /* Reset translation */
-  }
 }
 
 /* FEATURES */
@@ -745,6 +735,7 @@ h4 {
 }
 
 @media (max-width: 768px) {
+  /* NAV */
   .nav {
     padding: 1rem; /* Adjust padding */
     flex-direction: row; /* Stack items vertically */
@@ -756,7 +747,7 @@ h4 {
   }
 
   .nav__link {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
   }
 
   /* FEATURES */
@@ -778,13 +769,22 @@ h4 {
   .image_hide_smallscreen {
     display: none; /* Hide the image on small screens */
   }
+
+  /* HEADER */
+  .header__title {
+    grid-template-columns: 1fr; /* Change to single column */
+    align-items: center; /* Center items vertically */
+    justify-items: center; /* Center items horizontally */
+  }
+  .header__img {
+    width: 100%; /* Ensure it takes the full width */
+    margin: 1rem auto; /* Center the image and add some spacing */
+    transform: translateY(0); /* Reset translation */
+  }
 }
 
 @media (min-width: 768px) {
   .image_show_smallscreen {
-    /* display: block; Show the image on small screens */
-    /* width: 100%; Ensure it takes the full width */
-    /* margin: 1rem auto; Center the image and add some spacing */
     display: none; /* Hide the image on small screens */
   }
 }
@@ -797,5 +797,13 @@ h4 {
   .section__title--testimonials {
     margin-bottom: 40px; /* Space below the title */
     z-index: 1; /* Bring it above other elements if necessary */
+  }
+
+  .nav__item {
+    margin: 0.25rem; /* Reduce margin for tighter spacing */
+  }
+
+  .nav__link {
+    font-size: 0.9rem; /* Reduce font size for smaller screens */
   }
 }
