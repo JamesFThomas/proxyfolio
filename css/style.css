@@ -284,7 +284,6 @@ h4 {
 .operations {
   max-width: 100rem;
   margin: 12rem auto 0 auto;
-
   background-color: #fff;
 }
 
@@ -780,6 +779,22 @@ h4 {
     width: 100%; /* Ensure it takes the full width */
     margin: 1rem auto; /* Center the image and add some spacing */
     transform: translateY(0); /* Reset translation */
+  }
+
+  /* Hide buttons on small screen */
+  .btn {
+    display: none;
+  }
+
+  /* OPERATIONS */
+
+  /* Aligning operations content in a single column */
+  .operations__content {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align items in a column */
+    width: 100%; /* Stretch to full width */
+    margin: 0; /* Remove margins */
+    padding: 1rem; /* Optional: Add padding for better spacing */
   }
 }
 
