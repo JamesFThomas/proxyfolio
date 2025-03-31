@@ -476,12 +476,9 @@ h4 {
 }
 
 .dots {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
-  padding-top: 3rem;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
 .dots__dot {
@@ -795,10 +792,5 @@ h4 {
   .section__title--testimonials {
     margin-bottom: 40px; /* Space below the title */
     z-index: 1; /* Bring it above other elements if necessary */
-  }
-
-  .dots {
-    margin-top: 6rem; /* Push dots down to avoid overlap */
-    z-index: 1; /* Ensure it stays above the slider */
   }
 }
