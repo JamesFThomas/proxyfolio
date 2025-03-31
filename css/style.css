@@ -781,6 +781,11 @@ h4 {
     transform: translateY(0); /* Reset translation */
   }
 
+  .header {
+    padding: 3rem;
+    height: fit-content;
+  }
+
   /* Hide buttons on small screen */
   .btn {
     display: none;
