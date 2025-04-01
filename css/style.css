@@ -801,6 +801,12 @@ h4 {
     width: 100%; /* Stretch to full width */
     margin: 0; /* Remove margins */
     padding: 1rem; /* Optional: Add padding for better spacing */
+    align-items: flex-start;
+  }
+
+  .operations__header {
+    align-self: flex-start;
+    padding: 1rem 1rem 1rem 0;
   }
 }
 
